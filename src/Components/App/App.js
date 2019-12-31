@@ -11,10 +11,10 @@ function App() {
         <h1>Movie Database</h1>
       </header>
       <Router>
-      <div>
+      <div >
         <nav>
           <ul>
-            <p><Link to="/add">Add Entry</Link></p>
+            <p><Link to="/add" >Add Entry </Link></p>
             <p><Link to="/manage">Manage Genres</Link></p>
           </ul>
         </nav>

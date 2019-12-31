@@ -4,7 +4,7 @@ class Addentry extends Component {
     render() {
         return (
             <div>
-                <h1>hi</h1>
+                <h1>Add Movie</h1>
             </div>
         );
     }

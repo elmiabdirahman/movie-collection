@@ -4,7 +4,7 @@ class Manage extends Component {
     render() {
         return (
             <div>
-                <h1>from Manage page</h1>
+                <h1>Add Genre</h1>
             </div>
         );
     }
