@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
+import Addentry from '../Addentry/Addentry';
+import Manage from '../Manage/Manage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Movie Database</h1>
       </header>
+      <Router>
+      <div>
+        <nav>
+          <ul>
+            <p><Link to="/add">Add Entry</Link></p>
+            <p><Link to="/manage">Manage Genres</Link></p>
+          </ul>
+        </nav>
+        <Route path='/add' exact component={Addentry}/>
+        <Route path='/manage' exact component={ Manage }/>
+      </div>
+    </Router>
     </div>
   );
 }
